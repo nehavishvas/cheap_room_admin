@@ -1,0 +1,221 @@
+/* ==============================
+   CLEAN & SIMPLE TABLE + PAGE STYLES
+   ============================== */
+
+.information_dataTables {
+  border: 1px solid #e2eae7;
+  border-radius: 14px;
+  overflow-x: auto;
+  background: #ffffff;
+}
+
+.information_dataTables table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.information_dataTables table thead tr {
+  background-color: #f4f7f6;
+  color: #3f5852;
+  font-weight: 700;
+  border-bottom: 1px solid #e2eae7;
+}
+
+.information_dataTables table thead th {
+  padding: 13px 16px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.55px;
+  color: #3f5852;
+  white-space: nowrap;
+  border: none;
+  border-bottom: 1px solid #e2eae7;
+}
+
+.information_dataTables table tbody tr {
+  background-color: #ffffff;
+  transition: background-color 0.15s ease;
+}
+
+.information_dataTables table tbody tr:hover {
+  background-color: #f8fbfa;
+}
+
+.information_dataTables table tbody tr td {
+  font-size: 13.5px;
+  color: #16302c;
+  font-weight: 500;
+  padding: 12px 16px;
+  vertical-align: middle;
+  white-space: nowrap;
+  border: none;
+  border-bottom: 1px solid #eef3f1;
+}
+
+.information_dataTables table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.information_dataTables table td,
+.information_dataTables table th {
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 260px;
+}
+
+/* Card Container */
+.my-profile-area .profile-form-content {
+  background-color: #ffffff;
+  margin-bottom: 24px;
+  padding-top: 22px;
+  border-radius: 14px;
+  border: 1px solid #e2eae7;
+  box-shadow: 0 1px 4px rgba(14, 47, 44, 0.04);
+}
+
+.my-profile-area .profile-form-content h3 {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0 24px 18px;
+  border-bottom: 1px solid #eef3f1;
+  color: #0e2f2c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.my-profile-area .profile-form-content .profile-form {
+  padding: 20px 24px 24px;
+}
+
+/* Action Icons - Subtle & Clean */
+.action-icon-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.action-icon-info i {
+  color: #133e39;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  background: #f3f7f5;
+  border: 1px solid #e2eae7;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.action-icon-info i:hover {
+  background: #eb943d;
+  border-color: #eb943d;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+/* Search + Entries Select */
+.parentProduceSearch {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  gap: 12px;
+}
+
+.parentProduceSearch input {
+  padding: 8px 14px;
+  outline: none;
+  border: 1px solid #dbe4e0;
+  border-radius: 10px;
+  font-size: 13.5px;
+  min-width: 220px;
+  color: #16302c;
+  background: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.parentProduceSearch input:focus {
+  border-color: #133e39;
+  box-shadow: 0 0 0 3px rgba(19, 62, 57, 0.08);
+}
+
+.entries select {
+  padding: 6px 10px;
+  border: 1px solid #dbe4e0;
+  border-radius: 8px;
+  font-size: 13.5px;
+  color: #16302c;
+  background: #ffffff;
+}
+
+/* Pagination Buttons */
+.paginationActive {
+  width: 32px !important;
+  height: 32px;
+  border-radius: 8px;
+  background: #0e2f2c;
+  line-height: 32px;
+  text-align: center;
+}
+
+.paginationActive a {
+  color: #ffffff !important;
+  background-color: transparent;
+}
+
+.paginationBttns a {
+  padding: 0;
+  margin: 8px;
+  border-radius: 8px;
+  color: #133e39;
+  cursor: pointer;
+}
+
+/* Switch Toggle */
+.recruiter-status-info .form-switch .form-check-input {
+  width: 44px;
+  height: 22px;
+  border: 1px solid #cbd5d1;
+  background-color: #e2e8e6;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.recruiter-status-info .form-switch .form-check-input:checked {
+  background-color: #133e39;
+  border-color: #133e39;
+}
+
+/* Responsive Fixes */
+@media (max-width: 991px) {
+  .my-profile-area .profile-form-content h3 {
+    font-size: 18px;
+    padding: 0 18px 14px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .my-profile-area .profile-form-content .profile-form {
+    padding: 16px 18px 20px;
+  }
+
+  .parentProduceSearch {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .parentProduceSearch input {
+    width: 100%;
+    min-width: 0;
+  }
+}

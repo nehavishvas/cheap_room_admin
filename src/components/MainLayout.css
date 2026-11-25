@@ -1,0 +1,585 @@
+/* ============================================================
+   Cheap Rooms MV - Responsive Dark Brand Sidebar & Header
+   Theme: Deep Door-Tag Pine (#0B2522) & Warm Amber (#EB943D)
+   ============================================================ */
+
+.main-app-layout {
+  min-height: 100vh;
+  background: #f6f8f7;
+}
+
+.app-sider.ant-layout-sider {
+  background: linear-gradient(180deg, #0b2522 0%, #071a17 100%) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.05) !important;
+  box-shadow: 4px 0 24px rgba(7, 26, 23, 0.14) !important;
+  position: sticky !important;
+  top: 0;
+  height: 100vh;
+  z-index: 100;
+  transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0.28s ease !important;
+}
+
+.app-sider .ant-layout-sider-children {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: transparent !important;
+}
+
+/* Sidebar Brand Header */
+.sidebar-logo-container {
+  height: 76px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  flex-shrink: 0;
+}
+
+.sidebar-logo-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.sidebar-logo-icon-wrap {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.24);
+  flex-shrink: 0;
+}
+
+.sidebar-logo-icon {
+  width: 23px;
+  height: 23px;
+  object-fit: contain;
+}
+
+.sidebar-brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.sidebar-brand-name {
+  font-size: 16.5px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.2px;
+}
+
+.sidebar-brand-name span {
+  color: #eb943d;
+}
+
+.sidebar-brand-tagline {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: rgba(226, 238, 235, 0.65);
+  margin-top: 3px;
+}
+
+/* Scrollable Menu Area */
+.sidebar-menu-scroll {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 14px 0 24px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.14) transparent;
+}
+
+.sidebar-menu-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sidebar-menu-scroll::-webkit-scrollbar-track {
+  background: transparent;
+  box-shadow: none;
+}
+
+.sidebar-menu-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+}
+
+/* Clean Minimal Dark Menu Items (Lucide Line Icons) */
+.app-sider .ant-menu.ant-menu-root,
+.app-sider .ant-menu-inline,
+.app-sider .ant-menu-vertical {
+  background: transparent !important;
+  border-inline-end: none !important;
+  padding: 0 12px !important;
+}
+
+.app-sider .ant-menu-item,
+.app-sider .ant-menu-submenu-title {
+  color: rgba(232, 242, 239, 0.80) !important;
+  font-size: 13.75px !important;
+  font-weight: 500 !important;
+  margin: 2px 0 !important;
+  width: 100% !important;
+  height: 41px !important;
+  line-height: 41px !important;
+  border-radius: 10px !important;
+  padding-inline: 14px !important;
+  display: flex !important;
+  align-items: center !important;
+  transition: background-color 0.18s ease, color 0.18s ease !important;
+}
+
+.app-sider .ant-menu-item .ant-menu-item-icon,
+.app-sider .ant-menu-submenu-title .ant-menu-item-icon,
+.app-sider .ant-menu-item svg,
+.app-sider .ant-menu-submenu-title svg {
+  color: rgba(232, 242, 239, 0.65) !important;
+  font-size: 17px !important;
+  width: 17px !important;
+  height: 17px !important;
+  min-width: 17px !important;
+  transition: color 0.18s ease !important;
+}
+
+.app-sider .ant-menu-item:hover,
+.app-sider .ant-menu-submenu-title:hover {
+  background: rgba(255, 255, 255, 0.06) !important;
+  color: #ffffff !important;
+}
+
+.app-sider .ant-menu-item:hover svg,
+.app-sider .ant-menu-submenu-title:hover svg {
+  color: #eb943d !important;
+}
+
+/* Submenu Arrow */
+.app-sider .ant-menu-submenu-arrow {
+  color: rgba(232, 242, 239, 0.45) !important;
+}
+
+.app-sider .ant-menu-submenu-selected > .ant-menu-submenu-title {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+.app-sider .ant-menu-submenu-selected > .ant-menu-submenu-title svg {
+  color: #eb943d !important;
+}
+
+/* Clean Submenu Tree (No heavy dark box) */
+.app-sider .ant-menu-sub.ant-menu-inline {
+  background: transparent !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 0 !important;
+  padding: 2px 0 4px 8px !important;
+  margin: 2px 0 6px 22px !important;
+}
+
+.app-sider .ant-menu-sub.ant-menu-inline .ant-menu-item {
+  padding-inline: 12px !important;
+  padding-left: 12px !important;
+  font-size: 13.25px !important;
+  height: 36px !important;
+  line-height: 36px !important;
+  color: rgba(226, 238, 235, 0.72) !important;
+}
+
+.app-sider .ant-menu-sub.ant-menu-inline .ant-menu-item svg {
+  font-size: 15px !important;
+  width: 15px !important;
+  height: 15px !important;
+  min-width: 15px !important;
+}
+
+/* Active Selected Item (Soft Translucent Pill) */
+.app-sider .ant-menu-item-selected {
+  background: rgba(255, 255, 255, 0.10) !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
+}
+
+.app-sider .ant-menu-item-selected svg,
+.app-sider .ant-menu-item-selected .ant-menu-item-icon {
+  color: #eb943d !important;
+}
+
+.app-sider .ant-menu-item-selected:hover {
+  background: rgba(255, 255, 255, 0.14) !important;
+  color: #ffffff !important;
+}
+
+/* Main Site Area */
+.site-layout {
+  min-height: 100vh;
+  background: #f6f8f7 !important;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* Clean Minimal Top Header */
+.app-header.ant-layout-header {
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 24px !important;
+  background: rgba(255, 255, 255, 0.96) !important;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #e7ecea;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+/* Toggle ONLY visible on tablet & mobile (<= 1024px) */
+.header-toggle-btn {
+  display: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  color: #16302c;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.header-toggle-btn:hover {
+  background: #f1f5f3;
+  color: #0e2f2c;
+}
+
+/* Breadcrumb in Header */
+.header-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13.5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header-breadcrumb-brand {
+  color: #6b7f7a;
+  font-weight: 500;
+}
+
+.header-breadcrumb-sep {
+  color: #b4c2be;
+  font-weight: 400;
+}
+
+.header-breadcrumb-page {
+  color: #0e2f2c;
+  font-weight: 600;
+}
+
+/* Header Right Actions */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-icon-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: #4b615c;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.header-icon-btn:hover {
+  background: #f1f5f3;
+  color: #0e2f2c;
+}
+
+/* Clean Minimal Profile Trigger */
+.header-profile-trigger {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 2px 4px;
+  border-radius: 999px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  line-height: 1.2;
+}
+
+.header-profile-trigger:hover {
+  opacity: 0.88;
+}
+
+.header-avatar-wrap {
+  position: relative;
+  display: inline-flex;
+  flex-shrink: 0;
+}
+
+.header-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid #e2eae7;
+  background: #0e2f2c;
+}
+
+.header-avatar-fallback {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #0e2f2c;
+  color: #eb943d;
+  font-weight: 700;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #eb943d;
+}
+
+.header-avatar-status {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #10b981;
+  border: 1.5px solid #ffffff;
+}
+
+.header-user-meta {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-right: 2px;
+}
+
+.header-user-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #0e2f2c;
+  max-width: 130px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header-user-role {
+  font-size: 11px;
+  font-weight: 500;
+  color: #6b7f7a;
+  text-transform: capitalize;
+}
+
+/* Profile Dropdown Menu */
+.dropdown-menu,
+.profile-dropdown-menu {
+  border-radius: 14px !important;
+  border: 1px solid #e2eae7 !important;
+  box-shadow: 0 14px 34px rgba(14, 47, 44, 0.14) !important;
+  padding: 6px !important;
+  background: #ffffff !important;
+  min-width: 210px !important;
+  line-height: 1.4 !important;
+  margin-top: 8px !important;
+}
+
+.profile-dropdown-header {
+  padding: 8px 12px 6px;
+  line-height: 1.3 !important;
+}
+
+.profile-dropdown-name {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #0e2f2c;
+}
+
+.profile-dropdown-role {
+  font-size: 11.5px;
+  font-weight: 500;
+  color: #6b7f7a;
+  text-transform: capitalize;
+  margin-top: 2px;
+}
+
+.profile-dropdown-menu .dropdown-divider {
+  margin: 4px 6px !important;
+  border-color: #eef3f1 !important;
+}
+
+.dropdown-item {
+  border-radius: 9px !important;
+  color: #16302c !important;
+  font-weight: 500 !important;
+  font-size: 13.5px !important;
+  line-height: 1.4 !important;
+  padding: 9px 12px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  width: 100%;
+  transition: background-color 0.15s ease, color 0.15s ease !important;
+}
+
+.dropdown-item-icon {
+  font-size: 15px;
+  color: #5d746e;
+  flex-shrink: 0;
+}
+
+.dropdown-item:hover {
+  background: #f3f7f5 !important;
+  color: #0e2f2c !important;
+}
+
+.dropdown-item:hover .dropdown-item-icon {
+  color: #133e39;
+}
+
+.dropdown-item-danger {
+  color: #c0392b !important;
+}
+
+.dropdown-item-danger .dropdown-item-icon {
+  color: #c0392b !important;
+}
+
+.dropdown-item-danger:hover {
+  background: #fef2f2 !important;
+  color: #b91c1c !important;
+}
+
+.dropdown-item:active {
+  background: #0e2f2c !important;
+  color: #ffffff !important;
+}
+
+/* Content & Footer */
+.app-content.ant-layout-content {
+  margin: 22px 24px !important;
+  min-height: calc(100vh - 130px) !important;
+  background: transparent !important;
+}
+
+.app-footer {
+  background: transparent;
+  color: #6b807a;
+  border-top: 1px solid #e6ece9;
+  margin: 0;
+  padding: 14px 24px;
+  font-size: 12.5px;
+  text-align: center;
+}
+
+/* Tablet & Mobile Blurred Backdrop */
+.sidebar-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 24, 21, 0.52);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 1040;
+  animation: fadeInBackdrop 0.2s ease;
+}
+
+@keyframes fadeInBackdrop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Tablet & Mobile Overlay Drawer (<= 1024px) */
+@media (max-width: 1024px) {
+  .header-toggle-btn {
+    display: inline-flex;
+  }
+
+  .app-sider.ant-layout-sider {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh !important;
+    z-index: 1050 !important;
+    width: 268px !important;
+    min-width: 268px !important;
+    max-width: 268px !important;
+    flex: none !important;
+    transform: translateX(-105%);
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .app-sider.ant-layout-sider.mobile-sider-open {
+    transform: translateX(0);
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .header-user-meta {
+    display: none;
+  }
+
+  .app-header.ant-layout-header {
+    padding: 0 18px 0 14px !important;
+  }
+
+  .app-content.ant-layout-content {
+    margin: 18px 18px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .header-breadcrumb-brand,
+  .header-breadcrumb-sep {
+    display: none;
+  }
+
+  .app-header.ant-layout-header {
+    padding: 0 12px !important;
+  }
+
+  .app-content.ant-layout-content {
+    margin: 14px 12px !important;
+  }
+}

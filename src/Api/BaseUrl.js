@@ -1,0 +1,1 @@
+export const baseUrl = "https://mobappssolutiondevelopment.com/agoda_app/api/adminAuth/"

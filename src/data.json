@@ -1,0 +1,22 @@
+{
+  "ServiceRoutes": [
+    {
+      "serviceRoute1": "/security-system"
+    },
+    {
+      "serviceRoute2": "/home-system"
+    },
+    {
+      "serviceRoute3": "/office-system"
+    },
+    {
+      "serviceRoute4": "/access-system"
+    },
+    {
+      "serviceRoute5": "/attendance-system"
+    },
+    {
+      "serviceRoute6": "/surveillance-system"
+    }
+  ]
+}

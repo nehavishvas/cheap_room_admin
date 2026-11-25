@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap');
+
+:root {
+  /* Cheap Rooms Brand Palette (from door-tag logo) */
+  --brand-pine-950: #09201d;
+  --brand-pine-900: #0e2f2c;
+  --brand-pine-800: #133e39;
+  --brand-pine-700: #1a524b;
+  --brand-pine-100: #e8f2ef;
+  --brand-pine-50: #f3f8f6;
+
+  --brand-amber-500: #eb943d;
+  --brand-amber-600: #d97e26;
+  --brand-amber-100: #fef2e4;
+  --brand-amber-50: #fffaf3;
+
+  --brand-cream: #f5f2eb;
+
+  /* Semantic UI Tokens */
+  --primary-dark: #0e2f2c;
+  --primary-forest: #133e39;
+  --primary-hover: #1a524b;
+  --accent-amber: #eb943d;
+  --accent-amber-hover: #d97e26;
+  --accent-amber-light: #fef2e4;
+  --sage-bg: #f6f8f7;
+  --card-bg: #ffffff;
+  --border-color: #e2eae7;
+  --text-primary: #102a27;
+  --text-muted: #5d746e;
+  --yellow: #eb943d;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', Roboto, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--sage-bg);
+  color: var(--text-primary);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.ant-layout {
+  min-height: 100vh;
+  background: var(--sage-bg);
+}
+
+main {
+  flex: 1;
+  background-color: transparent !important;
+}
+
+.ant-menu-title-content {
+  font-size: 14px !important;
+  font-weight: 500;
+}
+
+.ant-layout-header h5 {
+  line-height: 20px;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+.ant-layout-header p {
+  line-height: 20px;
+  font-size: 13px;
+  background-color: transparent;
+}
+
+.error {
+  color: #dc2626;
+  font-size: 12px;
+}
+
+.global_button {
+  background: var(--brand-amber-500);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  padding: 9px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(235, 148, 61, 0.25);
+}
+
+.global_button:hover {
+  background: var(--brand-amber-600);
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(235, 148, 61, 0.35);
+}
+
+.global_button123 {
+  background: #ffffff;
+  color: var(--brand-pine-800);
+  border: 1px solid var(--border-color);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.global_button123:hover {
+  background: var(--brand-pine-800);
+  color: #ffffff;
+  border-color: var(--brand-pine-800);
+}
+
+/* SweetAlert Theme */
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+  background-color: var(--brand-pine-800) !important;
+  color: #ffffff !important;
+  border-radius: 10px !important;
+  padding: 9px 22px !important;
+  font-weight: 600 !important;
+  box-shadow: 0 2px 8px rgba(19, 62, 57, 0.2) !important;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm:hover {
+  background-color: var(--brand-pine-700) !important;
+}
+
+.swal2-icon.swal2-success .swal2-success-ring {
+  border: 0.25em solid var(--brand-pine-800) !important;
+}
+
+.swal2-icon.swal2-success [class^='swal2-success-line'] {
+  background-color: var(--brand-pine-800) !important;
+}

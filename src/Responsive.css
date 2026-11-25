@@ -1,0 +1,594 @@
+@media screen and (max-width: 380px) {
+  nav#menu {
+    width: 228px;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+  .breadcrumbs-main-content h2 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .service-detail-info h2 {
+    font-size: 25px;
+  }
+  .about-us-info-main {
+    padding: 40px 0px 40px 0px;
+  }
+  .about-us-content h2 {
+    font-weight: 600;
+  }
+  .who-we-are-content h2 {
+    margin-top: 20px;
+    font-weight: 600;
+    text-align: start;
+  }
+  .professional-slider-content h2 {
+    font-weight: 600;
+    text-align: center;
+  }
+  .solutions-content-area h2 {
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  .breadcrumbs-main-content {
+    text-align: center;
+  }
+  .solutions-img-info-area img{
+    width: 100%;
+    height: 60vh;
+  }
+  .our-team-img img{
+    object-fit: inherit;
+  }
+
+  /* About css start */
+  .professional-slider-content{
+    padding: 0vh;
+  }
+  .professional-box-info-area .flip-card{
+    width: auto;
+  }
+  .slider-wrapper{
+    margin-left: none !important;
+    margin-right: none !important;
+  }
+  
+  /* Contact us css start */
+  .registration-heading-main-area{
+    padding: 0vh;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /*header css start here*/
+
+  .main-logo img {
+    width: 55%;
+  }
+
+  .navbar-expand-lg.bg-body-tertiary {
+    display: none;
+  }
+
+  /*header css end here*/
+
+  /*home banner css start here*/
+
+  .main-banner-info-area {
+    height: 400px;
+  }
+
+  .main-banner-content-area {
+    width: 100%;
+    margin-top: 150px;
+  }
+
+  .main-banner-content-area h5 {
+    font-size: 25px;
+  }
+
+  .banner-info-area video {
+    width: auto;
+  }
+
+  .main-banner-content-area p {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  nav#menu {
+    width: 228px;
+  }
+
+  /*home banner css end here*/
+
+  /*Our Services css start here*/
+
+  .our-service-content {
+    width: 100%;
+  }
+
+  .our-service-content h2 {
+    font-size: 20px;
+  }
+
+  .our-service-short-details h4 {
+    margin: 0px;
+  }
+
+  .our-service-short-details h4 a {
+    font-size: 18px;
+  }
+
+  .our-service-short-details p {
+    font-size: 15px;
+  }
+
+  .footer-service-links ul li a {
+    font-size: 14px;
+  }
+
+  /*Our Services css end here*/
+
+  /* Side icon css start here*/
+
+  .icon-bar {
+    top: 75%;
+  }
+
+  /* Side icon css end here*/
+
+  /*col css start here*/
+
+  .col-6 {
+    width: 100%;
+  }
+
+  /*col css end here*/
+}
+
+@media only screen and (min-width: 481px) and (max-width: 568px) {
+  /*header css start here*/
+
+  .main-logo img {
+    width: 30%;
+  }
+
+  .navbar-expand-lg.bg-body-tertiary {
+    display: none;
+  }
+
+  /*header css end here*/
+
+  /*home banner css start here*/
+
+  .main-banner-info-area {
+    height: 400px;
+  }
+
+  .main-banner-content-area {
+    width: 90%;
+    margin-top: 190px;
+  }
+
+  .main-banner-content-area h5 {
+    font-size: 25px;
+  }
+
+  .banner-info-area video {
+    width: auto;
+  }
+
+  .main-banner-content-area p {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  /*home banner css end here*/
+
+  /*Our Services css start here*/
+
+  .our-service-content {
+    width: 100%;
+  }
+
+  .our-service-content h2 {
+    font-size: 20px;
+  }
+
+  /*Our Services css end here*/
+}
+
+@media only screen and (min-width: 569px) and (max-width: 766px) {
+  /*header css start here*/
+
+  .main-logo img {
+    width: 30%;
+  }
+
+  .navbar-expand-lg.bg-body-tertiary {
+    display: none;
+  }
+
+  /*header css end here*/
+
+  /*home banner css start here*/
+
+  .main-banner-info-area {
+    height: 400px;
+  }
+
+  .main-banner-content-area {
+    width: 80%;
+    margin-top: 190px;
+  }
+
+  .main-banner-content-area h5 {
+    font-size: 25px;
+  }
+
+  .banner-info-area video {
+    width: auto;
+  }
+
+  .main-banner-content-area p {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  /*home banner css end here*/
+
+  /*Our Services css start here*/
+
+  .our-service-content {
+    width: 100%;
+  }
+
+  .our-service-content h2 {
+    font-size: 25px;
+  }
+
+  .our-service-short-details h4 {
+    margin: 0px;
+  }
+
+  .our-service-short-details p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .our-service-heading h4 a {
+    font-size: 18px;
+  }
+
+  /*Our Services css end here*/
+}
+
+@media only screen and (min-width: 767px) and (max-width: 768px) {
+  /*header css start here*/
+
+  .main-logo img {
+    width: 25%;
+  }
+
+  .navbar-expand-lg.bg-body-tertiary {
+    display: none;
+  }
+
+  /*header css end here*/
+
+  /*home banner css start here*/
+
+  .main-banner-info-area {
+    height: 430px;
+  }
+
+  .main-banner-content-area {
+    width: 70%;
+    margin-top: 200px;
+  }
+
+  .main-banner-content-area p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  /*home banner css end here*/
+
+  /*our service css start here*/
+
+  .our-service-content {
+    width: 80%;
+  }
+
+  .main-banner-content-area h5 {
+    font-size: 30px;
+  }
+
+  .our-service-box-info {
+    padding: 30px 10px 30px 10px;
+  }
+
+  .our-service-short-details h4 {
+    margin: 0px;
+  }
+
+  .our-service-heading h4 a {
+    font-size: 18px;
+  }
+
+  .our-service-short-details h4 a {
+    font-size: 16px;
+  }
+
+  .our-service-box-info:hover .our-service-short-details {
+    overflow: auto;
+  }
+
+  .our-service-short-details p {
+    font-size: 14px;
+  }
+
+  /*our service css end here*/
+
+  /*footer css start here*/
+
+  .footer-service-links ul li a {
+    font-size: 12px;
+  }
+
+  .footer-company-details p {
+    font-size: 12px;
+  }
+
+  /*footer css end here*/
+}
+
+@media only screen and (min-width: 769px) and (max-width: 898px) {
+  /*header css start here*/
+
+  .main-logo img {
+    width: 25%;
+  }
+
+  .navbar-expand-lg.bg-body-tertiary {
+    display: none;
+  }
+
+  /*header css end here*/
+
+  /*home banner css start here*/
+
+  .main-banner-info-area {
+    height: 430px;
+  }
+
+  .main-banner-content-area {
+    width: 70%;
+    margin-top: 200px;
+  }
+
+  .main-banner-content-area p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  /*home banner css end here*/
+
+  /*our service css start here*/
+
+  .our-service-content {
+    width: 80%;
+  }
+
+  .main-banner-content-area h5 {
+    font-size: 30px;
+  }
+
+  .our-service-box-info {
+    padding: 30px 10px 30px 10px;
+  }
+
+  .our-service-short-details h4 {
+    margin: 0px;
+  }
+
+  .our-service-heading h4 a {
+    font-size: 18px;
+  }
+
+  .our-service-short-details h4 a {
+    font-size: 16px;
+  }
+
+  .our-service-box-info:hover .our-service-short-details {
+    overflow: auto;
+  }
+
+  .our-service-short-details p {
+    font-size: 14px;
+  }
+
+  /*our service css end here*/
+
+  /*footer css start here*/
+
+  .footer-service-links ul li a {
+    font-size: 12px;
+  }
+
+  .footer-company-details p {
+    font-size: 12px;
+  }
+
+  /*footer css end here*/
+}
+
+@media only screen and (min-width: 899px) and (max-width: 992px) {
+  /*header css start here*/
+
+  .navbar-expand-lg.bg-body-tertiary {
+    display: none;
+  }
+
+  /*header css end here*/
+
+  /*our service css start here*/
+
+  .our-service-short-details p {
+    font-size: 14px;
+  }
+
+  /*our service css end here*/
+
+  /*footer css start here*/
+
+  .footer-service-links ul li a {
+    font-size: 15px;
+  }
+
+  /*footer css end here*/
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1024px) {
+  /*header css start here*/
+
+  .main-logo {
+    width: 95%;
+  }
+
+  .main-logo img {
+    width: 30%;
+  }
+
+  /*header css end here*/
+
+  /*home banner css start here*/
+
+  .main-banner-info-area {
+    height: 550px;
+  }
+
+  .main-banner-content-area {
+    margin-top: 240px;
+  }
+
+  /*home banner css end here*/
+
+  /*our service css start here*/
+
+  .our-service-short-details p {
+    font-size: 15px;
+  }
+
+  /*our service css end here*/
+
+  /*footer css start here*/
+
+  .footer-service-links ul li a {
+    font-size: 15px;
+  }
+
+  /*footer css end here*/
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1199px) {
+  /*header css start here*/
+
+  .main-logo {
+    width: 95%;
+  }
+
+  .main-logo img {
+    width: 30%;
+  }
+
+  /*header css end here*/
+
+  /*home banner css start here*/
+
+  .main-banner-info-area {
+    height: 550px;
+  }
+
+  .main-banner-content-area {
+    margin-top: 240px;
+  }
+
+  /*home banner css end here*/
+
+  /*our service css start here*/
+
+  .our-service-short-details p {
+    font-size: 15px;
+  }
+
+  /*our service css end here*/
+
+  /*footer css start here*/
+
+  .footer-service-links ul li a {
+    font-size: 15px;
+  }
+
+  /*footer css end here*/
+
+  /*footer css start here*/
+
+  .footer-service-links ul li a {
+    font-size: 15px;
+  }
+
+  /*footer css end here*/
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1299px) {
+  /*header css start here*/
+
+  .main-logo {
+    width: 95%;
+  }
+
+  .main-logo img {
+    width: 30%;
+  }
+
+  /*header css end here*/
+
+  /*home banner css start here*/
+
+  .main-banner-info-area {
+    height: 550px;
+  }
+
+  .main-banner-content-area {
+    margin-top: 240px;
+  }
+
+  /*home banner css end here*/
+
+  /*our service css start here*/
+
+  .our-service-short-details p {
+    font-size: 15px;
+  }
+
+  /*our service css end here*/
+
+  /*footer css start here*/
+
+  .footer-service-links ul li a {
+    font-size: 15px;
+  }
+
+  /*footer css end here*/
+
+  /*footer css start here*/
+
+  .footer-service-links ul li a {
+    font-size: 15px;
+  }
+
+  /*footer css end here*/
+}
