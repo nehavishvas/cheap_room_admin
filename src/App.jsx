@@ -27,6 +27,7 @@ import CustomerSection from "./components/Customer Section/CustomerSection";
 // import AboutSection from "./components/About Section/AboutSection";
 // import AboutTeam from "./components/About Section/AboutTeam";
 import GuestHouseDetails from "./components/guestHouse/GuestHouseDetails";
+import ManageProperties from "./components/guestHouse/ManageProperties";
 import BookingManagement from "./components/booking-management/BookingManagement";
 
 // import CustomerManagement from "./components/customer-management/CustomerManagement";
@@ -69,9 +70,9 @@ import EditFAQ from "./components/Manage FAQ/EditFAQ";
 import ManageRefund from "./components/payment-commission/ManageRefund";
 import ManageCommission from "./components/payment-commission/ManageCommission";
 function App() {
-  console.log("date:31=07-2024,time:05:40");
+  console.log("date:25=11-2026,time:05:40");
   return (
-    <Router basename="/agoda/Admin">
+    <Router basename="/">
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/reset-password" element={<ResetPassword />} />
@@ -80,6 +81,7 @@ function App() {
         <Route path="/admin" element={<Protected Component={MainLayout} />}>
           <Route index element={<Dashboard />} />
           <Route path="manage-guesthouse" element={<GuestHouseDetails />} />
+          <Route path="manage-properties" element={<ManageProperties />} />
           <Route
             path="manage-guesthouse-Owners"
             element={<GuestHouseOwner />}

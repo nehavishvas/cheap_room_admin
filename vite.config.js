@@ -2,8 +2,12 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  base: "/agoda/Admin/",
+  base: "/",
   plugins: [react()],
+  server: {
+    host: "0.0.0.0",
+    port: 7000,
+  },
   build: {
     outDir: "build",
   },

@@ -1,7 +1,7 @@
 {
   "name": "admin-app",
   "version": "0.1.0",
-  "homepage": "https://itdevelopmentservices.com/agoda/Admin",
+  "homepage": "https://admin.cheaproomsmv.com/",
   "private": true,
   "type": "module",
   "dependencies": {

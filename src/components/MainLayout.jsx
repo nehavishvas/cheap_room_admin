@@ -5,6 +5,7 @@ import {
   LuLayoutDashboard,
   LuBuilding2,
   LuBedDouble,
+  LuHome,
   LuUsers,
   LuLayers,
   LuTag,
@@ -43,6 +44,7 @@ const TABLET_BREAKPOINT = 1024;
 const PAGE_TITLES = {
   "": "Dashboard",
   "manage-guesthouse": "Guesthouse Details",
+  "manage-properties": "Manage Properties",
   "guesthousedetail": "Guesthouse Details",
   "manage-guesthouse-Owners": "Guesthouse Owners",
   "ownerdetail": "Owner Details",
@@ -173,6 +175,8 @@ const MainLayout = () => {
       case "manage-guesthouse-Owners":
       case "ownerdetail":
         return "manage-guesthouse-Owners";
+      case "manage-properties":
+        return "manage-properties";
       case "all-bookings":
       case "all-bokking-detail":
         return "all-bookings";
@@ -223,6 +227,7 @@ const MainLayout = () => {
       "/admin/My-Profile": true,
       "/admin/change-password": true,
       "/Admin/manage-guesthouse": hasPermission("Manage Guesthouse"),
+      "/Admin/manage-properties": hasPermission("Manage Guesthouse"),
       "/Admin/manage-guesthouse-Owners": hasPermission("Manage Guesthouse"),
       "/Admin/manage-room": hasPermission("Manage Rooms"),
       "/Admin/room-category": hasPermission("Room Types"),
@@ -264,7 +269,8 @@ const MainLayout = () => {
       if (
         primarySegment === "guesthousedetail" ||
         primarySegment === "ownerdetail" ||
-        primarySegment === "manage-room"
+        primarySegment === "manage-room" ||
+        primarySegment === "manage-properties"
       ) {
         return hasPermission("Manage Guesthouse");
       }
@@ -422,6 +428,9 @@ const MainLayout = () => {
                 </Menu.Item>
                 <Menu.Item key="manage-guesthouse-Owners" icon={<LuUsers />}>
                   Guesthouse Owners
+                </Menu.Item>
+                <Menu.Item key="manage-properties" icon={<LuHome />}>
+                  Manage Property Types
                 </Menu.Item>
               </Menu.SubMenu>
             )}
